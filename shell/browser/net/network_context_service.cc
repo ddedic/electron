@@ -113,6 +113,9 @@ void NetworkContextService::ConfigureNetworkContextParams(
     network_context_params->enable_encrypted_cookies =
         electron::fuses::IsCookieEncryptionEnabled();
 
+    network_context_params->enable_same_site_origin_cookies =
+        electron::fuses::IsSameSiteOriginCookiesEnabled();
+
     network_context_params->file_paths->transport_security_persister_file_name =
         base::FilePath(chrome::kTransportSecurityPersisterFilename);
   }

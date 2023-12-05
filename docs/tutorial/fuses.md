@@ -74,6 +74,13 @@ The extra privileges granted to the `file://` protocol by this fuse are incomple
 * `file://` protocol pages can use service workers
 * `file://` protocol pages have universal access granted to child frames also running on `file://` protocols regardless of sandbox settings
 
+### `sameSiteOriginCookies`
+
+**Default:** Disabled
+**@electron/fuses:** `FuseV1Options.EnableSameSiteOriginCookies`
+
+x
+
 ## How do I flip the fuses?
 
 ### The easy way
