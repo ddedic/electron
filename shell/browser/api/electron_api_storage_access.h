@@ -7,5 +7,3 @@
 
 #include "browser/storage_access_api/storage_access_grant_permission_context.h"
 #include "browser/top_level_storage_access_api/top_level_storage_access_permission_context.h"
-
-
