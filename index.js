@@ -18,10 +18,4 @@ function getPlatformPath () {
     }
 }
 
-var platformPath = getPlatformPath()
-
-if (fs.existsSync(pathFile)) {
-  module.exports = path.join(__dirname, platformPath)
-} else {
-  throw new Error('Electron failed to install correctly, please delete node_modules/electron and try installing again')
-}
+module.exports = path.join(__dirname, getPlatformPath())
